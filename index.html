@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tanzania Loan and University Applications</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+.main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      padding: 90px 20px 20px;
+    }
+.searchbar {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: white;
+      z-index: 1000;
+    }
+.a {width:100px;height: 100px;
+
+}
+.photo {width:90px;height: 90px;
+    
+}
+.searchbar {
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  z-index: 1000;
+}
+
+.photo {
+      width: 90px;
+      height: 90px;
+    }
+
+h1, h2, p {
+      margin: 10px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+@media (max-width: 768px) {
+      .main {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 90px 10px 10px;
+      }
+
+      .a {
+        width: 80px;
+        height: 80px;
+      }
+
+      .photo {
+        width: 70px;
+        height: 70px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .searchbar {
+        width: 85%;
+        left: 7.5%;
+        transform: translateX(0);
+      }
+    }
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("searchInput").addEventListener("input", function() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let universities = document.querySelectorAll(".main > div");
+
+        universities.forEach(function(university) {
+            let name = university.textContent.toLowerCase();
+            if (name.includes(input)) {
+                university.style.display = "block";
+            } else {
+                university.style.display = "none";
+            }
+        });
+    });
+});
+
+</script>
+    </head>
+<body >
+<input class="searchbar" type="text" id="searchInput" placeholder="Search universities...">
+
+<div style="padding-top: 70px;">
+    <h1>Below are links to loan boards and universities. Click an image to apply.</h1>
+
+    <h2>Need help with applications? Join our WhatsApp group:
+      <a href="https://chat.whatsapp.com/HORFjNs65dW1fPu5mSHDNB" target="_blank">
+        <img src="wha.jpeg" style="width:40px;height:40px; vertical-align:middle;">
+      </a>
+    </h2>
+  </div>
+
+<div class="main">
+    
+    <div>
+   <button class="a" >
+    <a href="https://www.heslb.go.tz" target="_blank"> <img  class="photo" src="heslib.png"> </a>
+    
+   </button>
+   <div>HESLIB</div>
+   </div>
+   <div>
+<button class="a" >
+    <a href="https://zolas.zheslb.go.tz/zolas" target="_blank"> <img  class="photo" src="zanzibarloan.png"> </a>
+    
+   </button>
+   <div><p>ZANZIBAR LOAN</p></div>
+   </div>
+<div>
+    <button>
+    <a href="https://admission.udsm.ac.tz/" target="_blank"> <img  class="photo" src="Udsm.png"> </a>
+  
+   </button>
+   <div> <p>University of Dar es Salaam (UDSM)</p> </div>
+   </div>
+<div>
+    <button>
+    <a href=" https://application.udom.ac.tz" target="_blank"> <img  class="photo" src="Udom.png"> </a>
+   
+   </button>
+   <div> <p>The University of Dodoma (UDOM)</p></div>
+   </div>
+<div>
+    <button>
+    <a href=" https://www.sua.ac.tz/apply-admission-sua-online-application" target="_blank"> <img  class="photo" src="sua.png"> </a>
+    </button>
+   <div> <p>Sokoine University of Agriculture (SUA)</p></div>
+   </div>
+ <div>
+
+    <button><a href="https://oas.must.ac.tz" target="_blank"> <img  class="photo" src="must.png"> </a></button>
+
+    <div><p>Mbeya University of Science and Technology (MUST)</p></div>
+    </div>
+    
+   
+<div>
+    <button>
+        <a href=" https://admission.aru.ac.tz" target="_blank"> <img  class="photo" src="Aru.jpg"> </a></button>
+    <div><p>Ardhi University (ARU)</p></div>
+    
+ </div>
+<div>
+    <button>
+    <a href="https://admission.mzumbe.ac.tz" target="_blank"> <img  class="photo" src="mzumbe.jpg"> </a></button>
+    <div><p>Mzumbe University (MU)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.muhas.ac.tz" target="_blank"> <img  class="photo" src="Muhas.png"> </a></button>
+    <div><p>Muhimbili University of Health and Allied Sciences (MUHAS)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://tvetims.nacte.go.tz/" target="_blank"> <img  class="photo" src="Tuhas.jpg"> </a></button>
+    <div><p>Tosamaganga Institute of Health and Allied Sciences (TIHAS)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://admission.nm-aist.ac.tz/" target="_blank"> <img  class="photo" src="mandela.jpg"> </a></button>
+    <div><p>Nelson Mandela African Institute of Science and Technology (NM-AIST)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://admission.out.ac.tz" target="_blank"> <img  class="photo" src="out.jpg"> </a></button>
+    <div><p>Open University of Tanzania (OUT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.saut.ac.tz" target="_blank"> <img  class="photo" src="saut.jpg"> </a></button>
+    <div><p>St. Augustine University of Tanzania (SAUT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.makumira.ac.tz" target="_blank"> <img  class="photo" src="tumaini.jpg"> </a></button>
+    <div><p>Tumaini University Makumira(TUMa)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.kcmuco.ac.tz" target="_blank"> <img  class="photo" src="kcm.png"> </a></button>
+    <div><p>Kilimanjaro Christian Medical University College (KCMUCo)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://sumait.osim.cloud/" target="_blank"> <img  class="photo" src="sumait.jpg"> </a></button>
+    <div><p>Abdulrahman Al_Sumait University (SUMAIT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.bugando.ac.tz/" target="_blank"> <img  class="photo" src="catholic.png"> </a></button>
+    <div><p>Catholic University of Health and Allied Sciences (CUHAS)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.mocu.ac.tz/" target="_blank"> <img  class="photo" src="mocu.png"> </a></button>
+    <div><p>Moshi Cooperative University (MoCU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.rucu.ac.tz/" target="_blank"> <img  class="photo" src="ruaha.jpg"> </a></button>
+    <div><p>Ruaha Catholic University (RUCU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.juco.ac.tz/" target="_blank"> <img  class="photo" src="jordan.png"> </a></button>
+    <div><p>Jordan University College (JUC)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://www.vist.ac.tz/" target="_blank"> <img  class="photo" src="mabube.jpg"> </a></button>
+    <div><p>International Medical and Technological University (IMTU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.teku.ac.tz/oas/" target="_blank"> <img  class="photo" src="teo.jpg"> </a></button>
+    <div><p>Teofilo Kisanji University (TEKU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://sumait.osim.cloud/" target="_blank"> <img  class="photo" src="sumait.jpg"> </a></button>
+    <div><p>Abdulrahman
+Al- Sumait University (SUMAIT) </p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.aku.edu/" target="_blank"> <img  class="photo" src="aga.jpg"> </a></button>
+    <div><p>Aga Khan University (AKU)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.amucta.ac.tz/" target="_blank"> <img  class="photo" src="amu.png"> </a></button>
+    <div><p>Archbishop Mihayo University College (AMUCTA)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.atc.ac.tz/" target="_blank"> <img  class="photo" src="arusha.jpg"> </a></button>
+    <div><p>Arusha Technical College (ATC)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.cucom.ac.tz/" target="_blank"> <img  class="photo" src="cuom.png"> </a></button>
+    <div><p>Catholic University of Mbeya (CUoM)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.cfr.ac.tz/" target="_blank"> <img  class="photo" src="sfr.jpg"> </a></button>
+    <div><p>Center for Foreign Relations (CFR)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://admission.mwekawildlife.ac.tz/" target="_blank"> <img  class="photo" src="mweka.jpg"> </a></button>
+    <div><p>College of African Wildlife Management, Mweka (CAWM)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://coas.cbe.ac.tz/" target="_blank"> <img  class="photo" src="cbe1.jpg"> </a></button>
+    <div><p>College of Business Education</p></div>
+  
+</div>
+
+
+  
+
+<div>
+    <button>
+    <a href="https://admission.dit.ac.tz/" target="_blank"> <img  class="photo" src="dit.png"> </a></button>
+    <div><p>Dar es Salaam Institute of Technology (DIT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.dmi.ac.tz/" target="_blank"> <img  class="photo" src="dmi.jpg"> </a></button>
+    <div><p>Dar es Salaam Maritime Institute (DMI)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.tudarco.ac.tz/" target="_blank"> <img  class="photo" src="dartu.png"> </a></button>
+    <div><p>Dar es Salaam Tumaini University (DarTU)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://www.eastc.ac.tz/" target="_blank"> <img  class="photo" src="east.png"> </a></button>
+    <div><p>Eastern Africa Statistical Training Centre (EASTC)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.iaa.ac.tz/oas/" target="_blank"> <img  class="photo" src="iaa.jpg"> </a></button>
+    <div><p>Institute of Accountancy Arusha (IAA)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.iae.ac.tz/" target="_blank"> <img  class="photo" src="yss.png"> </a></button>
+    <div><p>Institute of Adult Education (IAE)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://ems.ifm.ac.tz/application" target="_blank"> <img  class="photo" src="ifm.jpg"> </a></button>
+    <div><p>Institute of Finance Management (IFM_Dar)</p></div>
+  
+</div>
+
+
+<div>
+    <button>
+    <a href="https://sis.ipa.ac.tz/Registration" target="_blank"> <img  class="photo" src="ipa.png"> </a></button>
+    <div><p>Institute of Public Administration (IPA)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://www.irdp.ac.tz/" target="_blank"> <img  class="photo" src="mipango.jpg"> </a></button>
+    <div><p>Institute of Rural Development Planning_Dodoma (IRDP)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.isw.ac.tz/" target="_blank"> <img  class="photo" src="isw.png"> </a></button>
+    <div><p>Institute of Social Work</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oap.ita.ac.tz/" target="_blank"> <img  class="photo" src="tra.png"> </a></button>
+    <div><p>Institute of Tax Administration (ITA)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.hkmu.ac.tz/" target="_blank"> <img  class="photo" src="kairuki.jpg"> </a></button>
+    <div><p>Kairuki University (KU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.kiut.ac.tz/" target="_blank"> <img  class="photo" src="kiut.jpg"> </a></button>
+    <div><p>Kampala International University in Tanzania (KIUT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://kist.ac.tz/" target="_blank"> <img  class="photo" src="kist.jpg"> </a></button>
+    <div><p>Karume Institute of Science and Technology (KIST)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.lgti.ac.tz/" target="_blank"> <img  class="photo" src="lg.jpg"> </a></button>
+    <div><p>Local Government Training Institute (LGTI)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://maruco.ac.tz/" target="_blank"> <img  class="photo" src="maru.jpg"> </a></button>
+    <div><p>Marian University College (MARUCo)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://muce.udsm.ac.tz/" target="_blank"> <img  class="photo" src="life.jpg"> </a></button>
+    <div><p>Mkwawa University College of Education (MUCE)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.mstcdc.or.tz/" target="_blank"> <img  class="photo" src="mm.jpg"> </a></button>
+    <div><p>MS Training Centre for Development Cooperation (MS_TCDC)</p></div>
+  
+</div>
+   <div>
+    <button>
+    <a href="https://application.mum.ac.tz/" target="_blank"> <img  class="photo" src="mum.png"> </a></button>
+    <div><p>Muslim University of Morogoro (MUM)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://mnma.osim.cloud/" target="_blank"> <img  class="photo" src="mma.jpg"> </a></button>
+    <div><p>Mwalimu Nyerere Memorial Academy </p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://mabumbe.com/mjnuat-admission/" target="_blank"> <img  class="photo" src="mwalim.jpg"> </a></button>
+    <div><p>Mwalimu Julius K. Nyerere University of Agriculture & Technology (MJNUAT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://mwanzauniversity.ac.tz/applications/" target="_blank"> <img  class="photo" src="mwauso.png"> </a></button>
+    <div><p>Mwanza University (MzU)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://uas.mwecau.ac.tz/" target="_blank"> <img  class="photo" src="mwecau.jpg"> </a></button>
+    <div><p>Mwenge Catholic University (MWECAU)</p></div>
+  
+</div>
+
+<div>
+    <button>
+    <a href="https://oas.nit.ac.tz/" target="_blank"> <img  class="photo" src="nit.jpg"> </a></button>
+    <div><p>National Institute of Transport (NIT)</p></div>
+  
+</div>
+
+
+<div>
+    <button>
+    <a href="https://oas.sfuchas.ac.tz/" target="_blank"> <img  class="photo" src="sfu.jpg"> </a></button>
+    <div><p>St. Francis University College of Health and Allied Sciences (SFUCHAS)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.sjut.ac.tz/" target="_blank"> <img  class="photo" src="st john.png"> </a></button>
+    <div><p>St. John's University of Tanzania (SJUT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.sjuit.ac.tz/" target="_blank"> <img  class="photo" src="joseph.jpg"> </a></button>
+    <div><p>St. Joseph University College of Health and Allied Sciences (SJCHAS)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://sjuitadmission.com/" target="_blank"> <img  class="photo" src="sce.png"> </a></button>
+    <div><p>St. Joseph University College of Engineering and Technology (SJCET)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://application.suza.ac.tz/" target="_blank"> <img  class="photo" src="suza.jpg"> </a></button>
+    <div><p>State University of Zanzibar (SUZA)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://stemmuco.osim.cloud/" target="_blank"> <img  class="photo" src="stem.jpg"> </a></button>
+    <div><p>Stella Maris Mtwara University College (STeMMUCo)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.tia.ac.tz/" target="_blank"> <img  class="photo" src="tia.png"> </a></button>
+    <div><p>Tanzania Institute of Accountancy(TIA)</p></div>
+  
+</div>
+
+
+
+<div>
+    <button>
+    <a href="https://oas.ticd.ac.tz/" target="_blank"> <img  class="photo" src="tico.jpg"> </a></button>
+    <div><p>Tengeru Institute of Community Development (TICD)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://unique.ac.tz/" target="_blank"> <img  class="photo" src="academy.png"> </a></button>
+    <div><p>Unique Academy, Dar es Salaam (UAD)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas.uaut.ac.tz/" target="_blank"> <img  class="photo" src="tan.png"> </a></button>
+    <div><p>United African University of Tanzania (UAUT)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://osim.uoa.ac.tz/" target="_blank"> <img  class="photo" src="arushau.jpg"> </a></button>
+    <div><p>University of Arusha (UoA)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://uoi.ac.tz/" target="_blank"> <img  class="photo" src="iringa.jpg"> </a></button>
+    <div><p>University of Iringa (UoI)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://oas2.waterinstitute.ac.tz/" target="_blank"> <img  class="photo" src="water.png"> </a></button>
+    <div><p>Water Institute (WI)</p></div>
+  
+</div>
+<div>
+    <button>
+    <a href="https://www.zumis.ac.tz/admission/data/register" target="_blank"> <img  class="photo" src="zu.jpg"> </a></button>
+    <div><p>Zanzibar University (ZU)</p></div>
+  
+</div>
+
+</div>
+    </body>
+</html>
